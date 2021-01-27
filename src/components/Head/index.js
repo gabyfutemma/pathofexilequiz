@@ -1,5 +1,5 @@
 import Head from 'next/head';
-const path = "https://github.com/gabyfutemma/poefanquiz/blob/main/public";
+const path = "https://raw.githubusercontent.com/gabyfutemma/poefanquiz/main/public";
 
 function IndexPage({title, imgBg, favicon, description}) {
   return (
