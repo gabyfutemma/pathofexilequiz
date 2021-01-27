@@ -21,7 +21,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <Fragment>
-      <Head title={db.title} imgBg={window.location.href+db.bg} favicon={db.favicon}/>
+      <Head title={db.title} imgBg={db.bg} favicon={db.favicon}/>
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <Widget>
