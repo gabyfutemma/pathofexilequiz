@@ -4,21 +4,23 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  border-radius: 4px;
-  background-color:${({ theme }) => theme.colors.mainBg};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   overflow: hidden;
 
   h1, h2, h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1;
+    font-family: ${({ theme }) => theme.fonts.title}
   }
   p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    font-family: ${({ theme }) => theme.fonts.content}
   }
-`
+`;
 
 Widget.Header = styled.header`
   display: flex;
@@ -26,7 +28,7 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 10px 32px;
   background-color: ${({ theme }) => theme.colors.primary}
-`
+`;
 
 Widget.Content = styled.div`
 padding: 24px 32px 32px 32px;
@@ -40,6 +42,6 @@ ul {
   list-style: none;
   padding: 0;
 }
-`
+`;
 
 export default Widget;

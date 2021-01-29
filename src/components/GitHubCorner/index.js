@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const SVGWrapper = styled.svg`
   fill: ${({ theme }) => theme.colors.tertiary};
-  color: ${({ theme }) => theme.colors.mainbg};
+  color: ${({ theme }) => theme.colors.mainBg};
   cursor: pointer;
   &:hover .octo-arm{
     animation:octocat-wave 560ms ease-in-out
@@ -31,7 +31,6 @@ const SVGWrapper = styled.svg`
   }
 `;
 
-// eslint-disable-next-line react/prop-types
 export default function GitHubCorner({ projectUrl }) {
   return (
     <Wrapper>
